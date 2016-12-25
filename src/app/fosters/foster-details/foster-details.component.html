@@ -1,0 +1,13 @@
+<h2>HEROES</h2>
+<div *ngIf="foster">
+  <h3>"{{ foster.name }}"</h3>
+  <div>
+    <label>Id: </label>{{ foster.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="foster.name" placeholder="name" />
+  </div>
+  <p>
+    <button (click)="gotoFosters()">Back</button>
+  </p>
+</div>

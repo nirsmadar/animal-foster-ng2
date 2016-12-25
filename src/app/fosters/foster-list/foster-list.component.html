@@ -1,0 +1,7 @@
+<div>
+  <ul>
+    <li *ngFor="let foster of fosters | async" (click)="onSelect(foster)">
+      {{ foster.name }}
+    </li>
+  </ul>
+</div>
